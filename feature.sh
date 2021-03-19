@@ -1,9 +1,9 @@
 #!/bin/bash
 
-TARGET="T1019s2"
-TARGET_DIR="test_data"
-TARGET_SEQ="${TARGET_DIR}/${TARGET}.seq" # fasta format
-PLMDCA_DIR="plmDCA/plmDCA_asymmetric_v2/"
+TARGET="SerPH122"
+TARGET_DIR="/content/gdrive/output"
+TARGET_SEQ="/content/gdrive/MyDrive/Seq/${TARGET}" # fasta format
+PLMDCA_DIR="/content/gdrive/MyDrive/Databases/plmDCA/plmDCA_asymmetric_v2/"
 
 # generate domain crops from target seq
 python feature.py -s $TARGET_SEQ -c
