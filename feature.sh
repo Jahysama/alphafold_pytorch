@@ -6,7 +6,7 @@ TARGET_SEQ="/content/gdrive/MyDrive/Seq/${TARGET}" # fasta format
 PLMDCA_DIR="/content/gdrive/MyDrive/Databases/plmDCA/plmDCA_asymmetric_v2/"
 
 # generate domain crops from target seq
-python feature.py -s $TARGET_SEQ -c
+python /content/alphafold_pytorch/feature.py -s $TARGET_SEQ -c
 
 for domain in ${TARGET_DIR}/*.seq; do
 	out=${domain%.seq}
