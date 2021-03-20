@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARGET="SerPH122.fasta"
+TARGET="SerPH122.fas"
 TARGET_DIR="/content/gdrive/output"
 TARGET_SEQ="/content/gdrive/MyDrive/Seq/${TARGET}" # fasta format
 PLMDCA_DIR="/content/gdrive/MyDrive/Databases/plmDCA/plmDCA_asymmetric_v2/"
