@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TARGET="SerPH122"
+TARGET="SerPH122.fasta"
 TARGET_DIR="/content/gdrive/output"
 TARGET_SEQ="/content/gdrive/MyDrive/Seq/${TARGET}" # fasta format
 PLMDCA_DIR="/content/gdrive/MyDrive/Databases/plmDCA/plmDCA_asymmetric_v2/"
@@ -17,7 +17,7 @@ for domain in ${TARGET_DIR}/*.seq; do
 done
 
 # make target features data and generate ungap target aln file for plmDCA
-python feature.py -s $TARGET_SEQ -f
+python /content/alphafold_pytorch/feature.py -s $TARGET_SEQ -f
 
 cd $PLMDCA_DIR
 for aln in ../../${TARGET_DIR}/*.aln; do
@@ -27,4 +27,4 @@ done
 cd -
 
 # run again to update target features data
-python feature.py -s $TARGET_SEQ -f
+python /content/alphafold_pytorch/feature.py -s $TARGET_SEQ -f
